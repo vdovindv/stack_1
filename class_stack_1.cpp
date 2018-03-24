@@ -48,22 +48,3 @@ int Stack::pop()
     assert(size > 0);
     return(stackptr[--size]);
 }
-
-int main()
-{
-    int i, a, n, b = 10;
-    Stack test;
-    cin >> n;
-    for(i = 1; i <= n; i++)
-    {
-        cin >> a;
-        test.push(a);
-    }
-    for(i = 1; i <= n; i++)
-    {
-        cout<< "This element was on the top " << test.pop() << endl;
-    }
-    test.~Stack();
-    return 0;
-}
-
